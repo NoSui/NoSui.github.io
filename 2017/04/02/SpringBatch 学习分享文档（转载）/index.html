@@ -8,22 +8,22 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Sui&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SpringBatch ѧϰ�����ĵ���ת�أ�
-SpringBatch ����
-Spring Batch��һ���������ģ���ȫ����Spring�����������ܣ�����Ӧ������ҵ�����������ݴ���ϵͳ��Spring Batch��POJO�ʹ�����֪��Spring����Ϊ������ʹ�����߸����׵ķ��ʺ�������ҵ���">
+  <meta name="description" content="SpringBatch 学习分享文档（转载）
+SpringBatch 简介
+Spring Batch是一个轻量级的，完全面向Spring的批处理框架，可以应用于企业级大量的数据处理系统。Spring Batch以POJO和大家熟知的Spring框架为基础，使开发者更容易的访问和利用企业级服务。Spring Batch可以提供大量的，可重复的数据处理功能，包括日志记录/跟踪，事务管理，作业处理统计工">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sui's Blog">
 <meta property="og:url" content="http://yoursite.com/2017/04/02/SpringBatch 学习分享文档（转载）/index.html">
 <meta property="og:site_name" content="Sui's Blog">
-<meta property="og:description" content="SpringBatch ѧϰ�����ĵ���ת�أ�
-SpringBatch ����
-Spring Batch��һ���������ģ���ȫ����Spring�����������ܣ�����Ӧ������ҵ�����������ݴ���ϵͳ��Spring Batch��POJO�ʹ�����֪��Spring����Ϊ������ʹ�����߸����׵ķ��ʺ�������ҵ���">
-<meta property="og:updated_time" content="2017-04-02T00:47:04.100Z">
+<meta property="og:description" content="SpringBatch 学习分享文档（转载）
+SpringBatch 简介
+Spring Batch是一个轻量级的，完全面向Spring的批处理框架，可以应用于企业级大量的数据处理系统。Spring Batch以POJO和大家熟知的Spring框架为基础，使开发者更容易的访问和利用企业级服务。Spring Batch可以提供大量的，可重复的数据处理功能，包括日志记录/跟踪，事务管理，作业处理统计工">
+<meta property="og:updated_time" content="2017-04-02T00:50:19.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sui's Blog">
-<meta name="twitter:description" content="SpringBatch ѧϰ�����ĵ���ת�أ�
-SpringBatch ����
-Spring Batch��һ���������ģ���ȫ����Spring�����������ܣ�����Ӧ������ҵ�����������ݴ���ϵͳ��Spring Batch��POJO�ʹ�����֪��Spring����Ϊ������ʹ�����߸����׵ķ��ʺ�������ҵ���">
+<meta name="twitter:description" content="SpringBatch 学习分享文档（转载）
+SpringBatch 简介
+Spring Batch是一个轻量级的，完全面向Spring的批处理框架，可以应用于企业级大量的数据处理系统。Spring Batch以POJO和大家熟知的Spring框架为基础，使开发者更容易的访问和利用企业级服务。Spring Batch可以提供大量的，可重复的数据处理功能，包括日志记录/跟踪，事务管理，作业处理统计工">
   
     <link rel="alternative" href="/atom.xml" title="Sui&#39;s Blog" type="application/atom+xml">
   
@@ -154,70 +154,70 @@ Spring Batch��һ���������ģ���ȫ����Spring�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="SpringBatch-ѧϰ�����j���ת�أ�"><a href="#SpringBatch-ѧϰ�����j���ת�أ�" class="headerlink" title="SpringBatch ѧϰ�����ĵ���ת�أ�"></a><strong>SpringBatch ѧϰ�����ĵ���ת�أ�</strong></h1><hr>
-<h2 id="SpringBatch-����"><a href="#SpringBatch-����" class="headerlink" title="SpringBatch ����"></a>SpringBatch ����</h2><hr>
-<p>Spring Batch��һ���������ģ���ȫ����Spring�����������ܣ�����Ӧ������ҵ�����������ݴ���ϵͳ��Spring Batch��POJO�ʹ�����֪��Spring����Ϊ������ʹ�����߸����׵ķ��ʺ�������ҵ��������Spring Batch�����ṩ�����ģ����ظ������ݴ������ܣ�������־��¼/���٣�������������ҵ����ͳ�ƹ�����������������������Դ��������Ҫ���ܡ�</p>
+        <h1 id="SpringBatch-学习分享文档（转载）"><a href="#SpringBatch-学习分享文档（转载）" class="headerlink" title="SpringBatch 学习分享文档（转载）"></a><strong>SpringBatch 学习分享文档（转载）</strong></h1><hr>
+<h2 id="SpringBatch-简介"><a href="#SpringBatch-简介" class="headerlink" title="SpringBatch 简介"></a>SpringBatch 简介</h2><hr>
+<p>Spring Batch是一个轻量级的，完全面向Spring的批处理框架，可以应用于企业级大量的数据处理系统。Spring Batch以POJO和大家熟知的Spring框架为基础，使开发者更容易的访问和利用企业级服务。Spring Batch可以提供大量的，可重复的数据处理功能，包括日志记录/跟踪，事务管理，作业处理统计工作重新启动、跳过，和资源管理等重要功能。</p>
 <hr>
-<h4 id="SpringBatch������Ҫ��"><a href="#SpringBatch������Ҫ��" class="headerlink" title="SpringBatch������Ҫ��"></a>SpringBatch������Ҫ��</h4><hr>
+<h4 id="SpringBatch技术概要："><a href="#SpringBatch技术概要：" class="headerlink" title="SpringBatch技术概要："></a>SpringBatch技术概要：</h4><hr>
 <ol>
-<li><p>����Spring����ģ�ͣ�ʹ����Աרע��ҵ����������Spring���ܹ������̡�</p>
+<li><p>利用Spring编程模型：使程序员专注于业务处理，让Spring框架管理流程。</p>
 </li>
-<li><p>��ȷ������������ִ�л�����Ӧ�á�</p>
+<li><p>明确分离批处理的执行环境和应用。</p>
 </li>
-<li><p>�ṩ���ĵģ���ͨ�Ľӿڡ�</p>
+<li><p>提供核心的，共通的接口。</p>
 </li>
-<li><p>�ṩ���伴�ã�out of the box���ļ򵥵�Ĭ�ϵĺ���ִ�нӿڡ�</p>
+<li><p>提供开箱即用（out of the box）的简单的默认的核心执行接口。</p>
 </li>
-<li><p>�ṩSpring���������á��Զ��塢����չ������</p>
+<li><p>提供Spring框架中配置、自定义、和扩展服务。</p>
 </li>
-<li><p>���д��ڵĺ��ķ������Ժ��ݵı��滻����չ����Ӱ�������㡣</p>
+<li><p>所有存在的核心服务可以很容的被替换和扩展，不影响基础层。</p>
 </li>
-<li><p>�ṩһ���򵥵Ĳ���ģʽ������Maven����������Jar�ļ���</p>
+<li><p>提供一个简单的部署模式，利用Maven构建独立的Jar文件。</p>
 </li>
 </ol>
 <hr>
-<h2 id="SpringBatch��Ҫ����"><a href="#SpringBatch��Ҫ����" class="headerlink" title="SpringBatch��Ҫ����"></a>SpringBatch��Ҫ����</h2><hr>
+<h2 id="SpringBatch主要组成"><a href="#SpringBatch主要组成" class="headerlink" title="SpringBatch主要组成"></a>SpringBatch主要组成</h2><hr>
 <ul>
-<li><p>JobRepository : ����ע��Job������</p>
+<li><p>JobRepository : 用来注册Job的容器</p>
 </li>
-<li><p>JobLauncher : ��������Job�Ľӿ�</p>
+<li><p>JobLauncher : 用来启动Job的接口</p>
 </li>
-<li><p>Job : ʵ��ִ�е����񣬰���һ��������Step</p>
+<li><p>Job : 实际执行的任务，包含一个或多个Step</p>
 </li>
-<li><p>Step : Step ���裬����ItemReader��ItemProcessor��ItemWriter</p>
+<li><p>Step : Step 步骤，包含ItemReader、ItemProcessor、ItemWriter</p>
 </li>
-<li><p>ItemReader : ������ȡ���ݵĽӿ�</p>
+<li><p>ItemReader : 用来读取数据的接口</p>
 </li>
-<li><p>ItemProcessor : �����������ݵĽӿ�</p>
+<li><p>ItemProcessor : 用来处理数据的接口</p>
 </li>
-<li><p>ItemWriter : �����������ݵĽӿ�</p>
+<li><p>ItemWriter : 用来输出数据的接口</p>
 </li>
 </ul>
-<p>Spring Batch �Ľṹ��Ҫ��Ϊ���㣺Ӧ�ò㣨Application�������Ĳ㣨Batch Core���ͻ����ܹ��㣨Batch Infratrcture�������У�Ӧ�ò��������е���������ҵ��ͨ��Spring���ܹ�������Ա�Զ����Ĵ��롣���Ĳ�������Batch�����Ϳ�������Ҫ�ĺ����࣬�磺JobLauncher��Job��step�ȡ�Ӧ�ò��ͺ��Ĳ㽨���ڻ������ܲ�֮�ϣ��������ܲ��ṩ��ͨ�Ķ���ItemReader����д��ItemWriter�����ͷ�������ItemProcessor�����ݴ����ӿڡ����Ա�Ӧ�ò��ͺ��Ĳ�ʹ�ã���</p>
+<p>Spring Batch 的结构主要分为三层：应用层（Application），核心层（Batch Core）和基础架构层（Batch Infratrcture）。其中，应用层包含所有的批处理作业，通过Spring框架管理程序员自定义的代码。核心层包含了Batch启动和控制所需要的核心类，如：JobLauncher、Job和step等。应用层和核心层建立在基础构架层之上，基础构架层提供共通的读（ItemReader）、写（ItemWriter）、和服务（如ItemProcessor：数据处理接口。可以被应用层和核心层使用）。</p>
 <hr>
-<h2 id="SpringBatch������"><a href="#SpringBatch������" class="headerlink" title="SpringBatch������"></a>SpringBatch������</h2><p> ���������ĵ���ѧϰ�������Ѿ��ܹ�ͨ��springbatch����һ���򵥵�demo��д��demo������ַ��<a href="https://github.com/790712946/acer" target="_blank" rel="external">https://github.com/790712946/acer</a>���鿴demo�����Ǵ�jobִ�п�ʼ�Ķ����������£�</p>
+<h2 id="SpringBatch初体验"><a href="#SpringBatch初体验" class="headerlink" title="SpringBatch初体验"></a>SpringBatch初体验</h2><p> 经过官网文档的学习，我们已经能够通过springbatch进行一个简单的demo编写，demo代码地址：<a href="https://github.com/790712946/acer" target="_blank" rel="external">https://github.com/790712946/acer</a>。查看demo，我们从job执行开始阅读，代码如下：</p>
 <pre><code> @Autowired
 private JobLauncher jobLauncher;
 @Autowired
 private Job importUserJob;
-//ÿ������ִ��һ��
+//每隔五秒执行一次
 @Scheduled(fixedRate=5000)
 public void executeJob() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
-//��ʱ������ʶ����
+//以时间戳标识任务
 JobParameters jobParameter=new JobParametersBuilder().addLong(&quot;time&quot;,System.currentTimeMillis()).toJobParameters();
 JobExecution jobExecution=jobLauncher.run(importUserJob,jobParameter);
 }
-</code></pre><p>����@ScheduledΪ��ʱ���Ȳ��֣�������springbatch�����ݣ��Թ����ᣬ���ǿ��Է���springbatch������job����ͨ��JobLauncher��run�������������鿴run������ʵ�֣����ڴ�������̫�������Ƿֶν����Ķ�������</p>
+</code></pre><p>其中@Scheduled为定时调度部分，不属于springbatch的内容，略过不提，我们可以发现springbatch里面的job都是通过JobLauncher的run方法来启动，查看run方法的实现，由于代码内容太长，我们分段进行阅读，首先</p>
 <pre><code>    Assert.notNull(job, &quot;The Job must not be null.&quot;);
 Assert.notNull(jobParameters, &quot;The JobParameters must not be null.&quot;);
-</code></pre><p>�����ö��Զ����ǵ����������������жϣ�����Ϊ�գ����򷵻ز���Ϊ�յ��쳣��Ϣ�����ţ�</p>
+</code></pre><p>这里用断言对我们的两个参数进行了判断，不能为空，否则返回不能为空的异常信息。接着：</p>
 <pre><code>    final JobExecution jobExecution;
 JobExecution lastExecution = jobRepository.getLastJobExecution(job.getName(), jobParameters);
 if (lastExecution != null) {
     if (!job.isRestartable()) {
         throw new JobRestartException(&quot;JobInstance already exists and is not restartable&quot;);
     }
-</code></pre><p>ͨ��jobRepository.getLastJobExecution������һ��jobִ�������������������������������������������Ǽ����鿴getLastJobExecution���������ݣ�</p>
+</code></pre><p>通过jobRepository.getLastJobExecution构建了一个job执行器，传入两个参数（任务名，任务参数），我们继续查看getLastJobExecution方法的类容：</p>
 <pre><code>    @Override
 public JobExecution getLastJobExecution(String jobName, JobParameters jobParameters) {
     JobInstance jobInstance = jobInstanceDao.getJobInstance(jobName, jobParameters);
@@ -233,26 +233,26 @@ public JobExecution getLastJobExecution(String jobName, JobParameters jobParamet
     return jobExecution;
 
 }
-</code></pre><p>�������ڣ�����ͨ��jobInstanceDao.getJobInstance(jobName, jobParameters);������һ��jobInstance��������Ҫע�⣬jobInstanceDao�����ֲ�ͬʵ�֣�һ����JdbcJobInstanceDaoͨ�����ݿ���ѯʵ�֣�һ����MapJobInstanceDaoͨ���ڴ滺��ʵ�֣����Ŷ�jobinstance�������жϣ�����Ϊ�վͷ��أ���������ִ�У�ͨ��getLastJobExecution��ȡһ��JobExecution�������ڴ��������ݿ���û�У��򴴽�һ�����������ж���һ�������Ƿ������ظ�ִ��job.isRestartable()���������������׳�һ���쳣��JobRestartException���������ж�������ִ��״̬��</p>
+</code></pre><p>方法体内，首先通过jobInstanceDao.getJobInstance(jobName, jobParameters);构建了一个jobInstance，这里需要注意，jobInstanceDao有两种不同实现，一种是JdbcJobInstanceDao通过数据库查询实现，一种是MapJobInstanceDao通过内存缓存实现，接着对jobinstance进行了判断，如果为空就返回，否则继续执行，通过getLastJobExecution获取一个JobExecution，如果内存或者数据库中没有，则创建一个。接下来判断了一下任务是否允许重复执行job.isRestartable()，如果不允许则抛出一个异常（JobRestartException），接着判断了任务执行状态：</p>
 <pre><code>    for (StepExecution execution : lastExecution.getStepExecutions()) {
     if (execution.getStatus() == BatchStatus.UNKNOWN) {
         //throw
         throw new JobRestartException(&quot;Step [&quot; + execution.getStepName() + &quot;] is of status UNKNOWN&quot;);
     }//end if
 }
-</code></pre><p> ֻҪ����״̬��ΪUNKNOWN�������������Ŷ����ǵ�jobParameters��������֤��</p>
+</code></pre><p> 只要任务状态不为UNKNOWN则继续。紧接着对我们的jobParameters进行了验证：</p>
 <pre><code>job.getJobParametersValidator().validate(jobParameters);
-</code></pre><p>ʹ����Ĭ�ϵ���֤��������Ҳ�����Լ���չ������֤����<br>��������</p>
+</code></pre><p>使用了默认的验证器，我们也可以自己扩展参数验证器。<br>接下来：</p>
 <pre><code>jobExecution = jobRepository.createJobExecution(job.getName(), jobParameters);
-</code></pre><p>����ͨ������JobRepository������һ������ִ��������������ʹ���̳߳�TaskExecutor.executeִ�����ǵ���������Ҫ��ע    job.execute(jobExecution);�������鿴�÷�����</p>
+</code></pre><p>这里通过容器JobRepository创建了一个任务执行器。接下来，使用线程池TaskExecutor.execute执行我们的任务，主要关注    job.execute(jobExecution);方法，查看该方法，</p>
 <pre><code>JobSynchronizationManager.register(execution);
-</code></pre><p>�����ǵ����л�����������ע��������ִ��������Ϊ���ǵ������Ƕ��߳�ִ�еģ����������������л������̵߳���Ϣ��<br>���ţ�<br>    jobParametersValidator.validate(execution.getJobParameters());</p>
-<p>��֤������Ч�ԣ�ͨ��if (execution.getStatus() != BatchStatus.STOPPING) �ж�ִ��״̬����������û��ֹͣ������ִ��</p>
+</code></pre><p>向我们的序列化任务管理器注册了这个执行器。因为我们的任务是多线程执行的，所以这里面会序列话相关线程的信息。<br>接着：<br>    jobParametersValidator.validate(execution.getJobParameters());</p>
+<p>验证参数有效性，通过if (execution.getStatus() != BatchStatus.STOPPING) 判断执行状态，如果任务没有停止则继续执行</p>
 <pre><code>execution.setStartTime(new Date());
 updateStatus(execution, BatchStatus.STARTED);
 
 listener.beforeJob(execution);
-</code></pre><p>���������˿�ʼʱ��Ϊ��ǰʱ�䣬ִ��״̬Ϊ��ʼ�ˣ�Ȼ��ִ�������Ǽ������е�beforeJob����������ִ��doExecute����������ִ�еľ������ǵľ���JOB�ˡ����Ǹ������ӿڣ������ֲ�ͬ��ʵ�֣��ֱ���FlowJob��JsrFlowJob��JSR��׼ʵ�֣�,SimpleJobʵ�֣���������ֻ����SimpleJob��ʵ�֣��������£�</p>
+</code></pre><p>这里设置了开始时间为当前时间，执行状态为开始了，然后执行了我们监听器中的beforeJob方法。接着执行doExecute方法，这里执行的就是我们的具体JOB了。这是个抽象接口，有三种不同的实现，分别是FlowJob，JsrFlowJob（JSR标准实现）,SimpleJob实现，这里我们只看下SimpleJob的实现，代码如下：</p>
 <pre><code>    protected void doExecute(JobExecution execution) throws JobInterruptedException, JobRestartException,
 StartLimitExceededException {
 
@@ -266,23 +266,23 @@ StartLimitExceededException {
             break;
         }
     }
-</code></pre><p>���ǿ��Կ����������Ǳ���������Step��Ȼ��ͨ��handleStep��ִ�в��裬�����鿴handleStep���룬�����߼�Ϊ��</p>
+</code></pre><p>我们可以看到，这里是遍历了所有Step，然后通过handleStep来执行步骤，继续查看handleStep代码，核心逻辑为：</p>
 <pre><code>    step.execute(currentStepExecution);
 currentStepExecution.getExecutionContext().put(&quot;batch.executed&quot;, true);
-</code></pre><p>���Կ��������ǵĲ�����ͨ��step.execute��currentStepExecution��ִ�У��鿴ִ�д��룬ǰ����Ҫ������һЩ��ʼʱ�䣬ִ��״̬�����ú��жϣ�����ֻ��ע�����߼����������£�</p>
+</code></pre><p>可以看到，我们的步骤是通过step.execute（currentStepExecution）执行，查看执行代码，前面主要进行了一些开始时间，执行状态等设置和判断，我们只关注核心逻辑，代码如下：</p>
 <pre><code>doExecutionRegistration(stepExecution);
-</code></pre><p>ע��ִ������</p>
+</code></pre><p>注册执行器。</p>
 <pre><code>        getCompositeListener().beforeStep(stepExecution);
 open(stepExecution.getExecutionContext());
-</code></pre><p>����������������ִ��beforeStep���֡�</p>
+</code></pre><p>开启步骤监听器，执行beforeStep部分。</p>
 <pre><code>doExecute(stepExecution);
-</code></pre><p>ִ��ִ����������һ���ӿڣ��кܶ���ʵ�֣������߼���Jobִ������ִ�з������ƣ�Ҳ��ͨ��taskExecutor.execute���ж��߳�ִ�У���������Job��execute�ӿڡ����Ż�����ִ��״̬ΪCOMPLETED����finally�����Բ���ִ�������и��£�</p>
+</code></pre><p>执行执行器，这是一个接口，有很多种实现，具体逻辑与Job执行器的执行方法类似，也是通过taskExecutor.execute进行多线程执行，最后调用Job的execute接口。接着会更新执行状态为COMPLETED。在finally里会对步骤执行器进行更新：</p>
 <pre><code>    exitStatus = exitStatus.and(stepExecution.getExitStatus());
 stepExecution.setExitStatus(exitStatus);
 exitStatus = exitStatus.and(getCompositeListener().afterStep(stepExecution));
-</code></pre><p> ע�⣬������ִ�����Ǽ��������Ĳ���ִ�������¼�����Job��Ҳ��һ���ģ������ظ�˵����<br> ������ҵ���߼���ʹ�ý̳̿���ͨ��ʾ��<a href="https://github.com/790712946/acer" target="_blank" rel="external">demo</a>�鿴�����ﲻ��˵����</p>
-<h2 id="�ܽ�"><a href="#�ܽ�" class="headerlink" title="�ܽ�"></a>�ܽ�</h2><hr>
-<p>�������������springbatch��ִ�����̶��Ѿ������ˣ���Ȼ����״̬��תû����ô���ĵ���˵�������ǻ����������ǵĺ����߼�ǰ�����Թ۲쵽��Ŀǰֻ�Ǽ����˽⣬�Ӵ�ʱ�䲻�࣬�������룬���������Ѿ�������springbatch�����ܶ����������ƺ�ʹ�÷����������̳߳ص����õȡ�ͨ��ѧϰspringbatch�˽⵽�ˣ���������һ���ǳ����ӵ����̣����л��кܶ಻�Ǻ����׵ĵط���ϲ���ڽ�����ʱ�����������ƣ��˽⡣</p>
+</code></pre><p> 注意，这里会执行我们监听器里的步骤执行完的事件，在Job里也是一样的，不做重复说明。<br> 具体的业务逻辑和使用教程可以通过示例<a href="https://github.com/790712946/acer" target="_blank" rel="external">demo</a>查看，这里不再说明。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><hr>
+<p>到这里，我们整个springbatch的执行流程都已经看完了，虽然各种状态流转没有怎么在文档里说明，但是基本都在我们的核心逻辑前后可以观察到，目前只是简单了解，接触时间不多，不够深入，但是我们已经可以在springbatch看见很多优秀的设计和使用方法，例如线程池的利用等。通过学习springbatch了解到了，批处理是一个非常复杂的流程，其中还有很多不是很明白的地方，喜欢在今后的时间里继续完善，了解。</p>
 
       
 
