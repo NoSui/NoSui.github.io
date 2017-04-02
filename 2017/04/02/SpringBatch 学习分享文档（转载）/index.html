@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>Sui&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="SpringBatch ѧϰ�����ĵ���ת�أ�
+SpringBatch ����
+Spring Batch��һ���������ģ���ȫ����Spring�����������ܣ�����Ӧ������ҵ�����������ݴ���ϵͳ��Spring Batch��POJO�ʹ�����֪��Spring����Ϊ������ʹ�����߸����׵ķ��ʺ�������ҵ���">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sui's Blog">
+<meta property="og:url" content="http://yoursite.com/2017/04/02/SpringBatch 学习分享文档（转载）/index.html">
+<meta property="og:site_name" content="Sui's Blog">
+<meta property="og:description" content="SpringBatch ѧϰ�����ĵ���ת�أ�
+SpringBatch ����
+Spring Batch��һ���������ģ���ȫ����Spring�����������ܣ�����Ӧ������ҵ�����������ݴ���ϵͳ��Spring Batch��POJO�ʹ�����֪��Spring����Ϊ������ʹ�����߸����׵ķ��ʺ�������ҵ���">
+<meta property="og:updated_time" content="2017-04-02T00:47:04.100Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sui's Blog">
+<meta name="twitter:description" content="SpringBatch ѧϰ�����ĵ���ת�أ�
+SpringBatch ����
+Spring Batch��һ���������ģ���ȫ����Spring�����������ܣ�����Ӧ������ҵ�����������ݴ���ϵͳ��Spring Batch��POJO�ʹ�����֪��Spring����Ϊ������ʹ�����߸����׵ķ��ʺ�������ҵ���">
+  
+    <link rel="alternative" href="/atom.xml" title="Sui&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css?v=4.0.0.css">
+  
+
+  
+
+</head>
+
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="null" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Sui</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a data-idx="0" q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a data-idx="1" q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a data-idx="2" q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Sui</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="null" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Sui</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔/">随笔</a></li>
+		        
+		        
+		        	<li><a href="/archives/">所有文章</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <article id="post-SpringBatch 学习分享文档（转载）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="SpringBatch-ѧϰ�����j���ת�أ�"><a href="#SpringBatch-ѧϰ�����j���ת�أ�" class="headerlink" title="SpringBatch ѧϰ�����ĵ���ת�أ�"></a><strong>SpringBatch ѧϰ�����ĵ���ת�أ�</strong></h1><hr>
+<h2 id="SpringBatch-����"><a href="#SpringBatch-����" class="headerlink" title="SpringBatch ����"></a>SpringBatch ����</h2><hr>
+<p>Spring Batch��һ���������ģ���ȫ����Spring�����������ܣ�����Ӧ������ҵ�����������ݴ���ϵͳ��Spring Batch��POJO�ʹ�����֪��Spring����Ϊ������ʹ�����߸����׵ķ��ʺ�������ҵ��������Spring Batch�����ṩ�����ģ����ظ������ݴ������ܣ�������־��¼/���٣�������������ҵ����ͳ�ƹ�����������������������Դ��������Ҫ���ܡ�</p>
+<hr>
+<h4 id="SpringBatch������Ҫ��"><a href="#SpringBatch������Ҫ��" class="headerlink" title="SpringBatch������Ҫ��"></a>SpringBatch������Ҫ��</h4><hr>
+<ol>
+<li><p>����Spring����ģ�ͣ�ʹ����Աרע��ҵ����������Spring���ܹ������̡�</p>
+</li>
+<li><p>��ȷ������������ִ�л�����Ӧ�á�</p>
+</li>
+<li><p>�ṩ���ĵģ���ͨ�Ľӿڡ�</p>
+</li>
+<li><p>�ṩ���伴�ã�out of the box���ļ򵥵�Ĭ�ϵĺ���ִ�нӿڡ�</p>
+</li>
+<li><p>�ṩSpring���������á��Զ��塢����չ������</p>
+</li>
+<li><p>���д��ڵĺ��ķ������Ժ��ݵı��滻����չ����Ӱ�������㡣</p>
+</li>
+<li><p>�ṩһ���򵥵Ĳ���ģʽ������Maven����������Jar�ļ���</p>
+</li>
+</ol>
+<hr>
+<h2 id="SpringBatch��Ҫ����"><a href="#SpringBatch��Ҫ����" class="headerlink" title="SpringBatch��Ҫ����"></a>SpringBatch��Ҫ����</h2><hr>
+<ul>
+<li><p>JobRepository : ����ע��Job������</p>
+</li>
+<li><p>JobLauncher : ��������Job�Ľӿ�</p>
+</li>
+<li><p>Job : ʵ��ִ�е����񣬰���һ��������Step</p>
+</li>
+<li><p>Step : Step ���裬����ItemReader��ItemProcessor��ItemWriter</p>
+</li>
+<li><p>ItemReader : ������ȡ���ݵĽӿ�</p>
+</li>
+<li><p>ItemProcessor : �����������ݵĽӿ�</p>
+</li>
+<li><p>ItemWriter : �����������ݵĽӿ�</p>
+</li>
+</ul>
+<p>Spring Batch �Ľṹ��Ҫ��Ϊ���㣺Ӧ�ò㣨Application�������Ĳ㣨Batch Core���ͻ����ܹ��㣨Batch Infratrcture�������У�Ӧ�ò��������е���������ҵ��ͨ��Spring���ܹ�������Ա�Զ����Ĵ��롣���Ĳ�������Batch�����Ϳ�������Ҫ�ĺ����࣬�磺JobLauncher��Job��step�ȡ�Ӧ�ò��ͺ��Ĳ㽨���ڻ������ܲ�֮�ϣ��������ܲ��ṩ��ͨ�Ķ���ItemReader����д��ItemWriter�����ͷ�������ItemProcessor�����ݴ����ӿڡ����Ա�Ӧ�ò��ͺ��Ĳ�ʹ�ã���</p>
+<hr>
+<h2 id="SpringBatch������"><a href="#SpringBatch������" class="headerlink" title="SpringBatch������"></a>SpringBatch������</h2><p> ���������ĵ���ѧϰ�������Ѿ��ܹ�ͨ��springbatch����һ���򵥵�demo��д��demo������ַ��<a href="https://github.com/790712946/acer" target="_blank" rel="external">https://github.com/790712946/acer</a>���鿴demo�����Ǵ�jobִ�п�ʼ�Ķ����������£�</p>
+<pre><code> @Autowired
+private JobLauncher jobLauncher;
+@Autowired
+private Job importUserJob;
+//ÿ������ִ��һ��
+@Scheduled(fixedRate=5000)
+public void executeJob() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
+//��ʱ������ʶ����
+JobParameters jobParameter=new JobParametersBuilder().addLong(&quot;time&quot;,System.currentTimeMillis()).toJobParameters();
+JobExecution jobExecution=jobLauncher.run(importUserJob,jobParameter);
+}
+</code></pre><p>����@ScheduledΪ��ʱ���Ȳ��֣�������springbatch�����ݣ��Թ����ᣬ���ǿ��Է���springbatch������job����ͨ��JobLauncher��run�������������鿴run������ʵ�֣����ڴ�������̫�������Ƿֶν����Ķ�������</p>
+<pre><code>    Assert.notNull(job, &quot;The Job must not be null.&quot;);
+Assert.notNull(jobParameters, &quot;The JobParameters must not be null.&quot;);
+</code></pre><p>�����ö��Զ����ǵ����������������жϣ�����Ϊ�գ����򷵻ز���Ϊ�յ��쳣��Ϣ�����ţ�</p>
+<pre><code>    final JobExecution jobExecution;
+JobExecution lastExecution = jobRepository.getLastJobExecution(job.getName(), jobParameters);
+if (lastExecution != null) {
+    if (!job.isRestartable()) {
+        throw new JobRestartException(&quot;JobInstance already exists and is not restartable&quot;);
+    }
+</code></pre><p>ͨ��jobRepository.getLastJobExecution������һ��jobִ�������������������������������������������Ǽ����鿴getLastJobExecution���������ݣ�</p>
+<pre><code>    @Override
+public JobExecution getLastJobExecution(String jobName, JobParameters jobParameters) {
+    JobInstance jobInstance = jobInstanceDao.getJobInstance(jobName, jobParameters);
+    if (jobInstance == null) {
+        return null;
+    }
+    JobExecution jobExecution = jobExecutionDao.getLastJobExecution(jobInstance);
+
+    if (jobExecution != null) {
+        jobExecution.setExecutionContext(ecDao.getExecutionContext(jobExecution));
+        stepExecutionDao.addStepExecutions(jobExecution);
+    }
+    return jobExecution;
+
+}
+</code></pre><p>�������ڣ�����ͨ��jobInstanceDao.getJobInstance(jobName, jobParameters);������һ��jobInstance��������Ҫע�⣬jobInstanceDao�����ֲ�ͬʵ�֣�һ����JdbcJobInstanceDaoͨ�����ݿ���ѯʵ�֣�һ����MapJobInstanceDaoͨ���ڴ滺��ʵ�֣����Ŷ�jobinstance�������жϣ�����Ϊ�վͷ��أ���������ִ�У�ͨ��getLastJobExecution��ȡһ��JobExecution�������ڴ��������ݿ���û�У��򴴽�һ�����������ж���һ�������Ƿ������ظ�ִ��job.isRestartable()���������������׳�һ���쳣��JobRestartException���������ж�������ִ��״̬��</p>
+<pre><code>    for (StepExecution execution : lastExecution.getStepExecutions()) {
+    if (execution.getStatus() == BatchStatus.UNKNOWN) {
+        //throw
+        throw new JobRestartException(&quot;Step [&quot; + execution.getStepName() + &quot;] is of status UNKNOWN&quot;);
+    }//end if
+}
+</code></pre><p> ֻҪ����״̬��ΪUNKNOWN�������������Ŷ����ǵ�jobParameters��������֤��</p>
+<pre><code>job.getJobParametersValidator().validate(jobParameters);
+</code></pre><p>ʹ����Ĭ�ϵ���֤��������Ҳ�����Լ���չ������֤����<br>��������</p>
+<pre><code>jobExecution = jobRepository.createJobExecution(job.getName(), jobParameters);
+</code></pre><p>����ͨ������JobRepository������һ������ִ��������������ʹ���̳߳�TaskExecutor.executeִ�����ǵ���������Ҫ��ע    job.execute(jobExecution);�������鿴�÷�����</p>
+<pre><code>JobSynchronizationManager.register(execution);
+</code></pre><p>�����ǵ����л�����������ע��������ִ��������Ϊ���ǵ������Ƕ��߳�ִ�еģ����������������л������̵߳���Ϣ��<br>���ţ�<br>    jobParametersValidator.validate(execution.getJobParameters());</p>
+<p>��֤������Ч�ԣ�ͨ��if (execution.getStatus() != BatchStatus.STOPPING) �ж�ִ��״̬����������û��ֹͣ������ִ��</p>
+<pre><code>execution.setStartTime(new Date());
+updateStatus(execution, BatchStatus.STARTED);
+
+listener.beforeJob(execution);
+</code></pre><p>���������˿�ʼʱ��Ϊ��ǰʱ�䣬ִ��״̬Ϊ��ʼ�ˣ�Ȼ��ִ�������Ǽ������е�beforeJob����������ִ��doExecute����������ִ�еľ������ǵľ���JOB�ˡ����Ǹ������ӿڣ������ֲ�ͬ��ʵ�֣��ֱ���FlowJob��JsrFlowJob��JSR��׼ʵ�֣�,SimpleJobʵ�֣���������ֻ����SimpleJob��ʵ�֣��������£�</p>
+<pre><code>    protected void doExecute(JobExecution execution) throws JobInterruptedException, JobRestartException,
+StartLimitExceededException {
+
+    StepExecution stepExecution = null;
+    for (Step step : steps) {
+        stepExecution = handleStep(step, execution);
+        if (stepExecution.getStatus() != BatchStatus.COMPLETED) {
+            //
+            // Terminate the job if a step fails
+            //
+            break;
+        }
+    }
+</code></pre><p>���ǿ��Կ����������Ǳ���������Step��Ȼ��ͨ��handleStep��ִ�в��裬�����鿴handleStep���룬�����߼�Ϊ��</p>
+<pre><code>    step.execute(currentStepExecution);
+currentStepExecution.getExecutionContext().put(&quot;batch.executed&quot;, true);
+</code></pre><p>���Կ��������ǵĲ�����ͨ��step.execute��currentStepExecution��ִ�У��鿴ִ�д��룬ǰ����Ҫ������һЩ��ʼʱ�䣬ִ��״̬�����ú��жϣ�����ֻ��ע�����߼����������£�</p>
+<pre><code>doExecutionRegistration(stepExecution);
+</code></pre><p>ע��ִ������</p>
+<pre><code>        getCompositeListener().beforeStep(stepExecution);
+open(stepExecution.getExecutionContext());
+</code></pre><p>����������������ִ��beforeStep���֡�</p>
+<pre><code>doExecute(stepExecution);
+</code></pre><p>ִ��ִ����������һ���ӿڣ��кܶ���ʵ�֣������߼���Jobִ������ִ�з������ƣ�Ҳ��ͨ��taskExecutor.execute���ж��߳�ִ�У���������Job��execute�ӿڡ����Ż�����ִ��״̬ΪCOMPLETED����finally�����Բ���ִ�������и��£�</p>
+<pre><code>    exitStatus = exitStatus.and(stepExecution.getExitStatus());
+stepExecution.setExitStatus(exitStatus);
+exitStatus = exitStatus.and(getCompositeListener().afterStep(stepExecution));
+</code></pre><p> ע�⣬������ִ�����Ǽ��������Ĳ���ִ�������¼�����Job��Ҳ��һ���ģ������ظ�˵����<br> ������ҵ���߼���ʹ�ý̳̿���ͨ��ʾ��<a href="https://github.com/790712946/acer" target="_blank" rel="external">demo</a>�鿴�����ﲻ��˵����</p>
+<h2 id="�ܽ�"><a href="#�ܽ�" class="headerlink" title="�ܽ�"></a>�ܽ�</h2><hr>
+<p>�������������springbatch��ִ�����̶��Ѿ������ˣ���Ȼ����״̬��תû����ô���ĵ���˵�������ǻ����������ǵĺ����߼�ǰ�����Թ۲쵽��Ŀǰֻ�Ǽ����˽⣬�Ӵ�ʱ�䲻�࣬�������룬���������Ѿ�������springbatch�����ܶ����������ƺ�ʹ�÷����������̳߳ص����õȡ�ͨ��ѧϰspringbatch�˽⵽�ˣ���������һ���ǳ����ӵ����̣����л��кܶ಻�Ǻ����׵ĵط���ϲ���ڽ�����ʱ�����������ƣ��˽⡣</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/02/SpringBatch 学习分享文档（转载）/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/04/02/Springboot学习分享文档（转载）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/17/HEXO-Github-搭建属于自己的博客（转载）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HEXO+Github,搭建属于自己的博客（转载）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 Sui
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js?v=4.0.0.js"></script>
+
+
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
