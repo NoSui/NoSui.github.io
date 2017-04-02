@@ -8,12 +8,22 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Sui&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="SpringBoot 学习分享文档
+SpringBoot简介
+Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域（rapid application development）成为领导者">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Sui's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/04/02/Springboot学习分享文档/index.html">
 <meta property="og:site_name" content="Sui's Blog">
+<meta property="og:description" content="SpringBoot 学习分享文档
+SpringBoot简介
+Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域（rapid application development）成为领导者">
+<meta property="og:updated_time" content="2017-04-02T00:53:00.573Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sui's Blog">
+<meta name="twitter:description" content="SpringBoot 学习分享文档
+SpringBoot简介
+Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域（rapid application development）成为领导者">
   
     <link rel="alternative" href="/atom.xml" title="Sui&#39;s Blog" type="application/atom+xml">
   
@@ -139,9 +149,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Springboot学习分享文档" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Springboot学习分享文档" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -561,169 +569,26 @@ protected static class RedisConfiguration {
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/02/Springboot学习分享文档/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-SpringBatch 学习分享文档" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="SpringBatch-学习分享文档"><a href="#SpringBatch-学习分享文档" class="headerlink" title="SpringBatch 学习分享文档"></a><strong>SpringBatch 学习分享文档</strong></h1><hr>
-<h2 id="SpringBatch-简介"><a href="#SpringBatch-简介" class="headerlink" title="SpringBatch 简介"></a>SpringBatch 简介</h2><hr>
-<p>Spring Batch是一个轻量级的，完全面向Spring的批处理框架，可以应用于企业级大量的数据处理系统。Spring Batch以POJO和大家熟知的Spring框架为基础，使开发者更容易的访问和利用企业级服务。Spring Batch可以提供大量的，可重复的数据处理功能，包括日志记录/跟踪，事务管理，作业处理统计工作重新启动、跳过，和资源管理等重要功能。</p>
-<hr>
-<h4 id="SpringBatch技术概要："><a href="#SpringBatch技术概要：" class="headerlink" title="SpringBatch技术概要："></a>SpringBatch技术概要：</h4><hr>
-<ol>
-<li><p>利用Spring编程模型：使程序员专注于业务处理，让Spring框架管理流程。</p>
-</li>
-<li><p>明确分离批处理的执行环境和应用。</p>
-</li>
-<li><p>提供核心的，共通的接口。</p>
-</li>
-<li><p>提供开箱即用（out of the box）的简单的默认的核心执行接口。</p>
-</li>
-<li><p>提供Spring框架中配置、自定义、和扩展服务。</p>
-</li>
-<li><p>所有存在的核心服务可以很容的被替换和扩展，不影响基础层。</p>
-</li>
-<li><p>提供一个简单的部署模式，利用Maven构建独立的Jar文件。</p>
-</li>
-</ol>
-<hr>
-<h2 id="SpringBatch主要组成"><a href="#SpringBatch主要组成" class="headerlink" title="SpringBatch主要组成"></a>SpringBatch主要组成</h2><hr>
-<ul>
-<li><p>JobRepository : 用来注册Job的容器</p>
-</li>
-<li><p>JobLauncher : 用来启动Job的接口</p>
-</li>
-<li><p>Job : 实际执行的任务，包含一个或多个Step</p>
-</li>
-<li><p>Step : Step 步骤，包含ItemReader、ItemProcessor、ItemWriter</p>
-</li>
-<li><p>ItemReader : 用来读取数据的接口</p>
-</li>
-<li><p>ItemProcessor : 用来处理数据的接口</p>
-</li>
-<li><p>ItemWriter : 用来输出数据的接口</p>
-</li>
-</ul>
-<p>Spring Batch 的结构主要分为三层：应用层（Application），核心层（Batch Core）和基础架构层（Batch Infratrcture）。其中，应用层包含所有的批处理作业，通过Spring框架管理程序员自定义的代码。核心层包含了Batch启动和控制所需要的核心类，如：JobLauncher、Job和step等。应用层和核心层建立在基础构架层之上，基础构架层提供共通的读（ItemReader）、写（ItemWriter）、和服务（如ItemProcessor：数据处理接口。可以被应用层和核心层使用）。</p>
-<hr>
-<h2 id="SpringBatch初体验"><a href="#SpringBatch初体验" class="headerlink" title="SpringBatch初体验"></a>SpringBatch初体验</h2><p> 经过官网文档的学习，我们已经能够通过springbatch进行一个简单的demo编写，demo代码地址：<a href="https://github.com/790712946/acer" target="_blank" rel="external">https://github.com/790712946/acer</a>。查看demo，我们从job执行开始阅读，代码如下：</p>
-<pre><code> @Autowired
-private JobLauncher jobLauncher;
-@Autowired
-private Job importUserJob;
-//每隔五秒执行一次
-@Scheduled(fixedRate=5000)
-public void executeJob() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
-//以时间戳标识任务
-JobParameters jobParameter=new JobParametersBuilder().addLong(&quot;time&quot;,System.currentTimeMillis()).toJobParameters();
-JobExecution jobExecution=jobLauncher.run(importUserJob,jobParameter);
-}
-</code></pre><p>其中@Scheduled为定时调度部分，不属于springbatch的内容，略过不提，我们可以发现springbatch里面的job都是通过JobLauncher的run方法来启动，查看run方法的实现，由于代码内容太长，我们分段进行阅读，首先</p>
-<pre><code>    Assert.notNull(job, &quot;The Job must not be null.&quot;);
-Assert.notNull(jobParameters, &quot;The JobParameters must not be null.&quot;);
-</code></pre><p>这里用断言对我们的两个参数进行了判断，不能为空，否则返回不能为空的异常信息。接着：</p>
-<pre><code>    final JobExecution jobExecution;
-JobExecution lastExecution = jobRepository.getLastJobExecution(job.getName(), jobParameters);
-if (lastExecution != null) {
-    if (!job.isRestartable()) {
-        throw new JobRestartException(&quot;JobInstance already exists and is not restartable&quot;);
-    }
-</code></pre><p>通过jobRepository.getLastJobExecution构建了一个job执行器，传入两个参数（任务名，任务参数），我们继续查看getLastJobExecution方法的类容：</p>
-<pre><code>    @Override
-public JobExecution getLastJobExecution(String jobName, JobParameters jobParameters) {
-    JobInstance jobInstance = jobInstanceDao.getJobInstance(jobName, jobParameters);
-    if (jobInstance == null) {
-        return null;
-    }
-    JobExecution jobExecution = jobExecutionDao.getLastJobExecution(jobInstance);
-
-    if (jobExecution != null) {
-        jobExecution.setExecutionContext(ecDao.getExecutionContext(jobExecution));
-        stepExecutionDao.addStepExecutions(jobExecution);
-    }
-    return jobExecution;
-
-}
-</code></pre><p>方法体内，首先通过jobInstanceDao.getJobInstance(jobName, jobParameters);构建了一个jobInstance，这里需要注意，jobInstanceDao有两种不同实现，一种是JdbcJobInstanceDao通过数据库查询实现，一种是MapJobInstanceDao通过内存缓存实现，接着对jobinstance进行了判断，如果为空就返回，否则继续执行，通过getLastJobExecution获取一个JobExecution，如果内存或者数据库中没有，则创建一个。接下来判断了一下任务是否允许重复执行job.isRestartable()，如果不允许则抛出一个异常（JobRestartException），接着判断了任务执行状态：</p>
-<pre><code>    for (StepExecution execution : lastExecution.getStepExecutions()) {
-    if (execution.getStatus() == BatchStatus.UNKNOWN) {
-        //throw
-        throw new JobRestartException(&quot;Step [&quot; + execution.getStepName() + &quot;] is of status UNKNOWN&quot;);
-    }//end if
-}
-</code></pre><p> 只要任务状态不为UNKNOWN则继续。紧接着对我们的jobParameters进行了验证：</p>
-<pre><code>job.getJobParametersValidator().validate(jobParameters);
-</code></pre><p>使用了默认的验证器，我们也可以自己扩展参数验证器。<br>接下来：</p>
-<pre><code>jobExecution = jobRepository.createJobExecution(job.getName(), jobParameters);
-</code></pre><p>这里通过容器JobRepository创建了一个任务执行器。接下来，使用线程池TaskExecutor.execute执行我们的任务，主要关注    job.execute(jobExecution);方法，查看该方法，</p>
-<pre><code>JobSynchronizationManager.register(execution);
-</code></pre><p>向我们的序列化任务管理器注册了这个执行器。因为我们的任务是多线程执行的，所以这里面会序列话相关线程的信息。<br>接着：<br>    jobParametersValidator.validate(execution.getJobParameters());</p>
-<p>验证参数有效性，通过if (execution.getStatus() != BatchStatus.STOPPING) 判断执行状态，如果任务没有停止则继续执行</p>
-<pre><code>execution.setStartTime(new Date());
-updateStatus(execution, BatchStatus.STARTED);
-
-listener.beforeJob(execution);
-</code></pre><p>这里设置了开始时间为当前时间，执行状态为开始了，然后执行了我们监听器中的beforeJob方法。接着执行doExecute方法，这里执行的就是我们的具体JOB了。这是个抽象接口，有三种不同的实现，分别是FlowJob，JsrFlowJob（JSR标准实现）,SimpleJob实现，这里我们只看下SimpleJob的实现，代码如下：</p>
-<pre><code>    protected void doExecute(JobExecution execution) throws JobInterruptedException, JobRestartException,
-StartLimitExceededException {
-
-    StepExecution stepExecution = null;
-    for (Step step : steps) {
-        stepExecution = handleStep(step, execution);
-        if (stepExecution.getStatus() != BatchStatus.COMPLETED) {
-            //
-            // Terminate the job if a step fails
-            //
-            break;
-        }
-    }
-</code></pre><p>我们可以看到，这里是遍历了所有Step，然后通过handleStep来执行步骤，继续查看handleStep代码，核心逻辑为：</p>
-<pre><code>    step.execute(currentStepExecution);
-currentStepExecution.getExecutionContext().put(&quot;batch.executed&quot;, true);
-</code></pre><p>可以看到，我们的步骤是通过step.execute（currentStepExecution）执行，查看执行代码，前面主要进行了一些开始时间，执行状态等设置和判断，我们只关注核心逻辑，代码如下：</p>
-<pre><code>doExecutionRegistration(stepExecution);
-</code></pre><p>注册执行器。</p>
-<pre><code>        getCompositeListener().beforeStep(stepExecution);
-open(stepExecution.getExecutionContext());
-</code></pre><p>开启步骤监听器，执行beforeStep部分。</p>
-<pre><code>doExecute(stepExecution);
-</code></pre><p>执行执行器，这是一个接口，有很多种实现，具体逻辑与Job执行器的执行方法类似，也是通过taskExecutor.execute进行多线程执行，最后调用Job的execute接口。接着会更新执行状态为COMPLETED。在finally里会对步骤执行器进行更新：</p>
-<pre><code>    exitStatus = exitStatus.and(stepExecution.getExitStatus());
-stepExecution.setExitStatus(exitStatus);
-exitStatus = exitStatus.and(getCompositeListener().afterStep(stepExecution));
-</code></pre><p> 注意，这里会执行我们监听器里的步骤执行完的事件，在Job里也是一样的，不做重复说明。<br> 具体的业务逻辑和使用教程可以通过示例<a href="https://github.com/790712946/acer" target="_blank" rel="external">demo</a>查看，这里不再说明。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><hr>
-<p>到这里，我们整个springbatch的执行流程都已经看完了，虽然各种状态流转没有怎么在文档里说明，但是基本都在我们的核心逻辑前后可以观察到，目前只是简单了解，接触时间不多，不够深入，但是我们已经可以在springbatch看见很多优秀的设计和使用方法，例如线程池的利用等。通过学习springbatch了解到了，批处理是一个非常复杂的流程，其中还有很多不是很明白的地方，喜欢在今后的时间里继续完善，了解。</p>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -732,202 +597,81 @@ exitStatus = exitStatus.and(getCompositeListener().afterStep(stepExecution));
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/02/SpringBatch 学习分享文档/">展开全文 >></a>
-        </p>
-      
 
       
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-HEXO-Github-搭建属于自己的博客（转载）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/17/HEXO-Github-搭建属于自己的博客（转载）/">HEXO+Github,搭建属于自己的博客（转载）</a>
-    </h1>
-  
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
 
-        <a href="/2016/12/17/HEXO-Github-搭建属于自己的博客（转载）/" class="archive-article-date">
-  	<time datetime="2016-12-17T13:45:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-17</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>原文地址：<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">http://www.jianshu.com/p/465830080ea9</a></p>
-<p>　　经过各种找资料，踩过各种坑，终于使用 hexo 搭建个人博客初步完成了，域名目前用得时 github 的，我的 hexo 是 3.1.1 版本，hexo 不同的版本，很多配置都不一样。好吧，废话不多说了，开始吧。     </p>
-<p>　　本篇文章累计了大量评论，和我的一些解答，读者有什么问题可以先看看评论，或者搜下关键字，如果还是有问题可以给我在评论里给我留言，问题很着急的可以加我 ＱＱ：1499065178　，或者给我发邮件：<a href="mailto:leopardpan@icloud.com" target="_blank" rel="external">leopardpan@icloud.com</a>  ，都可以，如果你已经搭建完成了，可以看看我的另一篇博客<a href="http://baixin.io/2016/06/HEXO_Advanced/" target="_blank" rel="external">HEXO进阶</a>，有讲如何能百度搜索你的博客、多台电脑使用HEXO发布博客等。我现在的博客是使用 Jekyll 搭建的，如果你想使用我现在的模板请看<a href="http://baixin.io/2016/10/jekyll_tutorials1/" target="_blank" rel="external">Jekyll搭建个人博客</a> </p>
-<h2 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h2><p>　这边教程是针对与Mac的，<a href="http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool" target="_blank" rel="external">参考链接</a>，由于原文讲到的hexo是以前的老版本，所以现在的版本配置的时候会有些改动。</p>
-<p>　之前是想着写博客，一方面是给自己做笔记，可以提升自己的写作、总结能力，一个技术点我们会使用，并不难，但是要做到让让别人也能听懂我们讲得，还是需要一定的技巧和经验的。很多类似于CSDN、博客园也都可以写文章，但是页面的样式我，不是太喜欢，简书还算好点得。最近看到一些大神们的博客（在我的友情链接里有），貌似都是用hexo写得，我也依葫芦画瓢的搭建了一个。不罗嗦了，直接上搭建步骤。</p>
-<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="安装Node（必须）"><a href="#安装Node（必须）" class="headerlink" title="安装Node（必须）"></a>安装Node（必须）</h3><p>作用：用来生成静态页面的<br>到Node.js<a href="https://nodejs.org/" target="_blank" rel="external">官网</a>下载相应平台的最新版本，一路安装即可。</p>
-<h3 id="安装Git（必须）"><a href="#安装Git（必须）" class="headerlink" title="安装Git（必须）"></a>安装Git（必须）</h3><p>作用：把本地的hexo内容提交到github上去.<br>安装Xcode就自带有Git，我就不多说了。</p>
-<h3 id="申请GitHub（必须）"><a href="#申请GitHub（必须）" class="headerlink" title="申请GitHub（必须）"></a>申请GitHub（必须）</h3><p>作用：是用来做博客的远程创库、域名、服务器之类的，怎么与本地hexo建立连接等下讲。<br><a href="https://github.com/" target="_blank" rel="external">github</a>账号我也不再啰嗦了,没有的话直接申请就行了，跟一般的注册账号差不多，SSH Keys，看你自己了，可以不配制，不配置的话以后每次对自己的博客有改动提交的时候就要手动输入账号密码，配置了就不需要了，怎么配置我就不多说了，网上有很多教程。</p>
-<h3 id="正式安装HEXO"><a href="#正式安装HEXO" class="headerlink" title="正式安装HEXO　"></a>正式安装HEXO　</h3><p>Node和Git都安装好后，可执行如下命令安装hexo：</p>
-<pre><code>$ sudo npm install -g hexo
-</code></pre><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>创建一个文件夹，如：Blog，cd到Blog里执行hexo init的。命令：</p>
-<pre><code>hexo init
-</code></pre><p>好啦，至此，全部安装工作已经完成！</p>
-<h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><p>继续再Blog目录下执行如下命令，生成静态页面</p>
-<pre><code>hexo generate （hexo g  也可以）   
-</code></pre><h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><p>启动本地服务，进行文章预览调试，命令：</p>
-<pre><code>hexo server   
-</code></pre><p>浏览器输入<a href="就可以看到最原始的效果了">http://localhost:4000</a><br>我不知道你们能不能，反正我不能，因为我还有环境没配置好</p>
-<h3 id="常见的HEXO配置错误："><a href="#常见的HEXO配置错误：" class="headerlink" title="常见的HEXO配置错误："></a>常见的HEXO配置错误：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ERROR Plugin load failed: hexo-server</div><div class="line"></div><div class="line">原因： Besides, utilities are separated into a standalone module. hexo.util is not reachable anymore.</div><div class="line"></div><div class="line">解决方法，执行命令：$ sudo npm install hexo-server</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">执行命令hexo server，提示：Usage: hexo&lt;Command&gt; ....</div><div class="line"></div><div class="line">原因：我认为是没有生成本地服务</div><div class="line"></div><div class="line">解决方法，执行命令：$ npm install hexo-server --save</div><div class="line"></div><div class="line">提示：hexo-server@0.1.2 node_modules/hexo-server</div><div class="line">.... </div><div class="line"></div><div class="line">表示成功了[参考](https://hexo.io/zh-cn/docs/server.html)</div></pre></td></tr></table></figure>
-<p>这个时候再执行：$ hexo-server</p>
-<p>得到: INFO  Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.</p>
-<p>这个时候再点击<a href="http://0.0.0.0:4000" target="_blank" rel="external">http://0.0.0.0:4000</a>，正常情况下应该是最原始的画面，但是我看到的是：<br>白板和Cannot GET /   几个字<br>原因： 由于2.6以后就更新了，我们需要手动配置些东西，我们需要输入下面三行命令：</p>
-<pre><code>npm install hexo-renderer-ejs --save
-npm install hexo-renderer-stylus --save
-npm install hexo-renderer-marked --save
-</code></pre><p>这个时候再重新生成静态文件，命令：</p>
-<pre><code>hexo generate （或hexo g）
-</code></pre><p>启动本地服务器：</p>
-<pre><code>hexo server （或hexo s）
-</code></pre><p>再点击网址<a href="http://0.0.0.0:4000" target="_blank" rel="external">http://0.0.0.0:4000</a> OK终于可以看到属于你自己的blog啦，?，虽然很简陋，但好歹有了一个属于自己的小窝了。<a href="https://disqus.com/home/discussion/bsspirit/hexogithubweb/" target="_blank" rel="external">参考链接</a>，本地已经简单的设置好了，但是现在域名和服务器都是基于自己的电脑，接下来需要跟github进行关联。</p>
-<h2 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h2><h3 id="建立Repository"><a href="#建立Repository" class="headerlink" title="建立Repository"></a>建立Repository</h3><p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法<br>然后建立关联，我的Blog在本地/Users/leopard/Blog，Blog是我之前建的东西也全在这里面，有：</p>
-<blockquote>
-<p>Blog<br>　｜<br>　｜－－ _config.yml<br>　｜－－ node_modules<br>　｜－－ public<br>　｜－－ source<br>　｜－－ db.json<br>　｜－－ package.json<br>　｜－－ scaffolds<br>　｜－－ themes          　　　　　
-　　　</p>
-</blockquote>
-<p>现在我们需要_config.yml文件，来建立关联，命令：</p>
-<pre><code>vim _config.yml
-</code></pre><p>翻到最下面，改成我这样子的，注意： <code>: 后面要有空格</code></p>
-<pre><code>deploy:
-  type: git
-  repository: https://github.com/leopardpan/leopardpan.github.io.git
-  branch: master
-</code></pre><p>执行如下命令才能使用git部署</p>
-<pre><code>npm install hexo-deployer-git --save
-</code></pre><p>网上会有很多说法，有的type是github, 还有repository 最后面的后缀也不一样，是github.com.git，我也踩了很多坑，我现在的版本是hexo: 3.1.1，执行命令hexo -vsersion就出来了,貌似3.0后全部改成我上面这种格式了。<br>忘了说了，我没用SSH Keys如果你用了SSH Keys的话直接在github里复制SSH的就行了，总共就两种协议，相信你懂的。<br>然后，执行配置命令：</p>
-<pre><code>hexo deploy
-</code></pre><p>　然后再浏览器中输入<a href="http://leopardpan.github.io/" target="_blank" rel="external">http://leopardpan.github.io/</a>就行了，我的 github 的账户叫 leopardpan ,把这个改成你 github 的账户名就行了</p>
-<h3 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h3><p>每次部署的步骤，可按以下三步来进行。</p>
-<pre><code>hexo clean
-hexo generate
-hexo deploy
-</code></pre><p>一些常用命令：</p>
-<pre><code>hexo new &quot;postName&quot; #新建文章
-hexo new page &quot;pageName&quot; #新建页面
-hexo generate #生成静态页面至public目录
-hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
-hexo deploy #将.deploy目录部署到GitHub
-hexo help  #查看帮助
-hexo version  #查看Hexo的版本
-</code></pre><p>这里有大量的<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">主题列表</a>使用方法里面<br>都有详细的介绍，我就不多说了。<br>我这里有几款个人认为不错的主题，免去你们，一个一个的选了，欢迎吐槽我的审美，?<br>　<a href="https://github.com/daisygao/hexo-themes-cover" target="_blank" rel="external">Cover</a> - A chic theme with facebook-like cover photo<br>　<a href="https://github.com/henryhuang/oishi" target="_blank" rel="external">Oishi</a> - A white theme based on Landscape plus and Writing.<br>　<a href="https://github.com/hardywu/hexo-theme-sidebar" target="_blank" rel="external">Sidebar</a> - Another theme based on Light with a simple sidebar<br>　<a href="https://github.com/SuperKieran/TKL" target="_blank" rel="external">TKL</a> - A responsive design theme for Hexo. 一个设计优雅的响应式主题<br>　<a href="https://github.com/levonlin/Tinnypp" target="_blank" rel="external">Tinnypp</a> - A clean, simple theme based on Tinny<br>　<a href="https://github.com/yunlzheng/hexo-themes-writing" target="_blank" rel="external">Writing</a> - A small and simple hexo theme based on Light<br>　<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">Yilia</a> - Responsive and simple style 优雅简洁响应式主题，我用得就是这个。<br>　<a href="https://github.com/Voidly/pacman" target="_blank" rel="external">Pacman voidy</a> - A theme with dynamic tagcloud and dynamic snow      </p>
-<h3 id="一些基本路径"><a href="#一些基本路径" class="headerlink" title="一些基本路径"></a>一些基本路径</h3><p>　文章在 source/_posts，编辑器可以用 Sublime，支持 markdown 语法。如果想修改头像可以直接在主题的 _config.yml 文件里面修改，友情链接，之类的都在这里，修改名字在 public/index.html 里修改，开始打理你的博客吧，有什么问题或者建议，都可以提出来，我会继续完善的。</p>
-<p>Markdown语法参考链接: <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">作业部落</a></p>
-<h3 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h3><blockquote>
-<p>问：如何让文章想只显示一部分和一个 <code>阅读全文</code> 的按钮？<br>答：在文章中加一个 <code>&lt;!--more--&gt;</code> ， <code>&lt;!--more--&gt;</code> 后面的内容就不会显示出来了。</p>
-</blockquote>
-<p> </p>
-
-<blockquote>
-<p>问：本地部署成功了，也能预览效果，但使用 username.github.io 访问，<code>出现 404</code> .<br>答：首先确认 hexo d 命令执行是否报错，如果没有报错，再查看一下你的 github 的 username.github.io 仓库，你的博客是否已经成功提交了，你的 github 邮箱也要通过验证才行。</p>
-</blockquote>
-
-      
-
-      
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/02/Springboot学习分享文档/" alt="微信分享二维码">
     </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+</div>
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/17/HEXO-Github-搭建属于自己的博客（转载）/">展开全文 >></a>
-        </p>
-      
-
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <a href="/2016/12/17/hello-world/" class="archive-article-date">
-  	<time datetime="2016-12-17T13:28:59.996Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-17</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/17/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
+<nav id="article-nav">
   
   
+    <a href="/2017/04/02/SpringBatch 学习分享文档/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
 
 
           </div>
@@ -949,8 +693,8 @@ hexo version  #查看Hexo的版本
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
